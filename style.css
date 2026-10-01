@@ -25,7 +25,14 @@ body{
     border-radius:50px;
     border-top-left-radius:250px;
     border-top-right-radius:250px;
-    box-shadow:45px 45px 45px -15px rgba(135, 135, 135, 0.15),inset 15px 15px 10px rgb(255, 255, 255,0.75),-15px -15px 35px rgb(255, 255, 255,0.55),inset -2px -2px 15px rgba(0,0,0,0.2);
+    box-shadow:45px 45px 45px -15px rgba(135, 135, 135, 0.15),inset 15px 15px 10px rgb(255, 255, 255,0.75),-15px -15px 35px rgb(255, 255, 255,0.55),inset -2px -2px 15px rgba(0,0,0,0.2);    
+
+      overflow: hidden;
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
 
 }
 .clock::after,.clock::before{
